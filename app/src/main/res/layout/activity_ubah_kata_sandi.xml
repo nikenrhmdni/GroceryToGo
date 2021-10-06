@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    tools:context=".UbahKataSandi">
+
+    <EditText
+        android:id="@+id/pw_baru"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="30px"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Password Baru"
+        android:inputType="textPassword"
+        android:paddingStart="70px"
+        android:paddingEnd="70px"
+        android:password="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:textColorHint="#615151"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/pw_lama"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pw_lama"
+        app:layout_constraintTop_toBottomOf="@+id/pw_lama" />
+
+    <EditText
+        android:id="@+id/pw_konfir"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="30px"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Konfirmasi Password Baru"
+        android:inputType="textPassword"
+        android:paddingStart="70px"
+        android:paddingEnd="70px"
+        android:password="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:textColorHint="#615151"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/pw_lama"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pw_lama"
+        app:layout_constraintTop_toBottomOf="@+id/pw_baru" />
+
+    <EditText
+        android:id="@+id/pw_lama"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="30px"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Password Lama"
+        android:inputType="textPassword"
+        android:paddingStart="70px"
+        android:paddingEnd="70px"
+        android:password="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:textColorHint="#615151"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Ubah Kata Sandi"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/btn_ubah_sandi"
+        android:layout_width="342dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#5EC401"
+        android:drawableRight="@drawable/save"
+        android:fontFamily="@font/poppins_light"
+        android:text="                       S I M P A N                         "
+        android:textAllCaps="true"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/pw_konfir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pw_konfir"
+        app:layout_constraintTop_toBottomOf="@+id/pw_konfir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

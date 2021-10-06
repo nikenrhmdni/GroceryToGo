@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".Daftar">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_login" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Daftar Akun"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/daftar_user"
+        android:layout_width="341dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="30px"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Nama Pengguna"
+        android:inputType="textPersonName"
+        android:paddingLeft="70px"
+        android:paddingEnd="70px"
+        android:textColorHint="#615151"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/daftar_nohp"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/nohp"
+        android:drawablePadding="30px"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Nomor HP"
+        android:inputType="phone"
+        android:paddingStart="70px"
+        android:paddingEnd="70px"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/daftar_user"
+        app:layout_constraintTop_toBottomOf="@+id/daftar_user" />
+
+    <EditText
+        android:id="@+id/daftar_password"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="30px"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="70px"
+        android:paddingEnd="70px"
+        android:password="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:textColorHint="#615151"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/daftar_nohp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/daftar_nohp"
+        app:layout_constraintTop_toBottomOf="@+id/daftar_nohp" />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="338dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#5EC401"
+        android:drawableRight="@drawable/next"
+        android:fontFamily="@font/poppins_light"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="                 S E L A N J U T N Y A                    "
+        android:textAllCaps="true"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/daftar_password"
+        app:layout_constraintStart_toStartOf="@+id/daftar_password"
+        app:layout_constraintTop_toBottomOf="@+id/daftar_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
