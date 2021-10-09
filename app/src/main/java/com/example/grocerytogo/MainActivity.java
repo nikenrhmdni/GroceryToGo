@@ -13,33 +13,32 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class MainActivity extends AppCompatActivity {
 
-//    TextView daftar;
+    TextView daftar;
     Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_data_diri);
+        setContentView(R.layout.activity_main);
 
-//        daftar = findViewById(R.id.textView2);
-//        login = findViewById(R.id.btn_masuk);
-//
-//        daftar.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                Intent i = new Intent(MainActivity.this, Daftar.class);
-//                startActivity(i);
-//            }
-//        });
-//
-//        login.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                Intent i = new Intent(MainActivity.this, Login.class);
-//                startActivity(i);
-//            }
-//        });
+        daftar = findViewById(R.id.textView2);
+        login = findViewById(R.id.btn_masuk);
 
+        daftar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(MainActivity.this, Daftar.class);
+                startActivity(i);
+            }
+        });
+
+        login.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(MainActivity.this, Login.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
