@@ -15,7 +15,8 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Detail Barang"
-        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,6 +28,7 @@
         android:layout_marginTop="36dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Arla DANO Full Cream Milk Powder Instant"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
@@ -38,6 +40,7 @@
         android:layout_marginTop="36dp"
         android:fontFamily="@font/poppins_bold"
         android:text="1 KG"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView23"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -50,6 +53,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/poppins_light"
         android:text="Deskripsi Produk"
+        android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/imageView13"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
@@ -62,6 +66,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/poppins_light"
         android:text="Mengandung kalsium tinggi dan bagus untuk pertumbuhan tulang pada anak"
+        android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/imageView23"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
