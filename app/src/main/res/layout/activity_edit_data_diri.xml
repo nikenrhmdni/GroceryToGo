@@ -164,16 +164,16 @@
         android:id="@+id/simpan_datadiri"
         android:layout_width="342dp"
         android:layout_height="53dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#5EC401"
         android:drawableRight="@drawable/save"
         android:fontFamily="@font/poppins_bold"
         android:text="                        S I M P A N                      "
         android:textAllCaps="true"
         app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TextInputEditJenkel"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TextInputEditJenkel"
-        app:layout_constraintTop_toBottomOf="@+id/TextInputEditJenkel" />
+        app:layout_constraintStart_toStartOf="@+id/TextInputEditJenkel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

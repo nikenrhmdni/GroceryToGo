@@ -10,16 +10,6 @@
 >
 
     <ImageView
-        android:id="@+id/imageView40"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back"
-        app:srcCompat="@drawable/logo_login" />
-
-    <ImageView
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,14 +17,40 @@
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back"
-    />
+        app:srcCompat="@drawable/back" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="349dp"
-        android:layout_height="261dp"
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="339dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#5EC401"
+        android:drawableRight="@drawable/next"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="             S E L A N J U T N Y A                   "
+        android:textAllCaps="true"
+        app:cornerRadius="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/logo_login" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView40">
 
@@ -51,29 +67,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="339dp"
-            android:layout_height="52dp"
-            android:layout_marginTop="24dp"
-            android:backgroundTint="#5EC401"
-            android:drawableRight="@drawable/next"
-            android:fontFamily="@font/poppins_bold"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="             S E L A N J U T N Y A                   "
-            android:textAllCaps="true"
-            app:cornerRadius="40dp"
-            app:layout_constraintEnd_toEndOf="@+id/TextInputPassword"
-            app:layout_constraintStart_toStartOf="@+id/TextInputPassword"
-            app:layout_constraintTop_toBottomOf="@+id/TextInputPassword" />
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/TextInputPassword"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:layout_marginBottom="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/TextInputNama"
             app:layout_constraintStart_toStartOf="@+id/TextInputNama"
             app:layout_constraintTop_toBottomOf="@+id/TextInputNama"
@@ -104,8 +105,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.394"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3">
 
