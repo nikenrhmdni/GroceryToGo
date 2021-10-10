@@ -78,9 +78,9 @@ public class Pengaturan extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
                 Intent in = new Intent(Pengaturan.this, Home.class);
                 startActivity(in);
+                finish();
             }
         });
 
