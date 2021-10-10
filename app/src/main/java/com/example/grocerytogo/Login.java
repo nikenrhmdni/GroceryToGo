@@ -10,7 +10,8 @@ import android.widget.ImageView;
 
 public class Login extends AppCompatActivity {
 
-    ImageView back;
+    private ImageView back;
+    private Button loginn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +19,20 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         back = findViewById(R.id.back);
+        loginn = findViewById(R.id.btn_login);
 
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 finish();
+            }
+        });
+
+        loginn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Login.this, Home.class);
+                startActivity(i);
             }
         });
     }

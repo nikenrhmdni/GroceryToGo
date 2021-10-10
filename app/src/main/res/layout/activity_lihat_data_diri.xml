@@ -1,166 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_image"
+    android:orientation="vertical"
     tools:context=".LihatDataDiri">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Nama Pengguna"
-        android:textColor="#161617"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/btn_editdatadiri"
-        app:layout_constraintTop_toBottomOf="@+id/btn_editdatadiri" />
+        <Button
+            android:id="@+id/btn_editdatadiri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#5EC401"
+            android:drawableRight="@drawable/next"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:text="E D I T    D A T A    D I R I"
+            android:textAllCaps="true"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Tanggal Lahir"
-        android:textColor="#161617"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/lihat_nope"
-        app:layout_constraintTop_toBottomOf="@+id/lihat_nope" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Nomor HP"
-        android:textColor="#161617"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/lihat_nama"
-        app:layout_constraintTop_toBottomOf="@+id/lihat_nama" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Jenis Kelamin"
-        android:textColor="#161617"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/lihat_tgllahir"
-        app:layout_constraintTop_toBottomOf="@+id/lihat_tgllahir" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Lihat Data Diri"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        app:cardCornerRadius="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
-
-        <ImageView
-            android:id="@+id/imageView15"
+        <TextView
+            android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Lihat Data Diri"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_editdatadiri"
-        android:layout_width="338dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#5EC401"
-        android:drawableRight="@drawable/next"
-        android:fontFamily="@font/poppins_bold"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        android:text="E D I T    D A T A    D I R I"
-        android:textAllCaps="true"
-        app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
 
-    <TextView
-        android:id="@+id/lihat_nama"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_light"
-        android:text="Ulftm"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/btn_editdatadiri"
-        app:layout_constraintStart_toStartOf="@+id/btn_editdatadiri"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
 
-    <TextView
-        android:id="@+id/lihat_nope"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_light"
-        android:text="082381986612"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/lihat_nama"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/lihat_tgllahir"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_light"
-        android:text="12/08/2001"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/lihat_nope"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
 
-    <TextView
-        android:id="@+id/lihat_jenkel"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_light"
-        android:text="Perempuan"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/lihat_tgllahir"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Nama Pengguna"
+                android:textColor="#161617"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lihat_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Ulftm"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Nomor HP"
+                android:textColor="#161617"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lihat_nope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="+6281911856487"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Tanggal Lahir"
+                android:textColor="#161617"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lihat_tgllahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="12/08/2001"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Jenis Kelamin"
+                android:textColor="#161617"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lihat_jenkel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Perempuan"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

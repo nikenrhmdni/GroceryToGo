@@ -9,12 +9,13 @@
 
     <Button
         android:id="@+id/btn_ubah_sandi"
-        android:layout_width="342dp"
+        android:layout_width="match_parent"
         android:layout_height="53dp"
         android:layout_marginBottom="30dp"
         android:backgroundTint="#5EC401"
         android:drawableRight="@drawable/save"
         android:fontFamily="@font/poppins_bold"
+        android:layout_marginHorizontal="35dp"
         android:text="                       S I M P A N                         "
         android:textAllCaps="true"
         app:cornerRadius="20dp"
@@ -23,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="343dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +34,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/TextInpurPwKonfir"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             app:layout_constraintTop_toBottomOf="@+id/TextInputPwBaru"
@@ -41,12 +42,13 @@
 
             <EditText
                 android:id="@+id/pw_konfir"
-                android:layout_width="340dp"
-                android:layout_height="55dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:background="@drawable/edit_text"
                 android:drawableStart="@drawable/lock"
                 android:drawablePadding="30px"
+                android:layout_marginHorizontal="35dp"
                 android:ems="10"
                 android:fontFamily="@font/poppins_light"
                 android:hint="Konfirmasi Password Baru"
@@ -62,7 +64,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/TextInputPwLama"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -71,14 +73,15 @@
 
             <EditText
                 android:id="@+id/pw_lama"
-                android:layout_width="340dp"
-                android:layout_height="55dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:background="@drawable/edit_text"
                 android:drawableStart="@drawable/lock"
                 android:drawablePadding="30px"
                 android:ems="10"
                 android:fontFamily="@font/poppins_light"
+                android:layout_marginHorizontal="35dp"
                 android:hint="Password Lama"
                 android:inputType="textPassword"
                 android:paddingStart="70px"
@@ -92,7 +95,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/TextInputPwBaru"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -103,14 +106,15 @@
 
             <EditText
                 android:id="@+id/pw_baru"
-                android:layout_width="340dp"
-                android:layout_height="55dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:background="@drawable/edit_text"
                 android:drawableStart="@drawable/lock"
                 android:drawablePadding="30px"
                 android:ems="10"
                 android:fontFamily="@font/poppins_light"
+                android:layout_marginHorizontal="35dp"
                 android:hint="Password Baru"
                 android:inputType="textPassword"
                 android:paddingStart="70px"
