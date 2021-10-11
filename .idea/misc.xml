@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio/GroceryToGO/app/src/main/res/font/poppins_bold.xml" value="0.23958333333333334" />
+        <entry key="..\:/Android Studio/GroceryToGO/app/src/main/res/layout/activity_barang_kategori.xml" value="0.21" />
+        <entry key="..\:/Android Studio/GroceryToGO/app/src/main/res/layout/activity_lihat_detail_pesanan.xml" value="0.33" />
+        <entry key="..\:/Android Studio/GroceryToGO/app/src/main/res/layout/activity_pesanan_batal.xml" value="0.33" />
+        <entry key="..\:/Android Studio/GroceryToGO/app/src/main/res/layout/activity_produk_pesanan.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/GroceryToGO/app/src/main/res/layout/activity_sedang_memesan.xml" value="0.33" />
         <entry key="..\:/Users/ILHAM/AndroidStudioProjects/GroceryToGo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/ILHAM/AndroidStudioProjects/GroceryToGo/app/src/main/res/drawable/btn.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/ILHAM/AndroidStudioProjects/GroceryToGo/app/src/main/res/drawable/edit_text.xml" value="0.19583333333333333" />
